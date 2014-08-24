@@ -9,7 +9,7 @@
 <select name="city" id="city">
 <option value="">-- choose one --</option>
 <optgroup label="USA">
-<option value="SF">San Francisco</option>
+<option value="OAK">Oakland</option>
 <option value="NY">New York</option>
 <option> … remaining US states … </option>
 </optgroup>
@@ -17,8 +17,12 @@
 <option value="AB">California</option>
 <option value="CA">New York</option>
 <option> … remaining zip code … </option>
+<option value="94607">94607</option>
+<option value="10001">10001</option>
 </optgroup>
 </select>
+
+<br>
 
 <label for="distance" accesskey="d">Distance From Location</label>
 <form name="distance">
@@ -31,8 +35,8 @@
 <option value="">1000+ Miles</option>
 <option value="">2000+ Miles</option>
 </select>
-<input type="button" onClick="location=document.hop.choose.options[document.hop.choose.selectedIndex].value;" value="Select!"></p>
-</form>
+
+<br>
 
 <label for="imagefiletypes" accesskey="i">Image File Types</label>
 <form name="Image File Types">
@@ -41,12 +45,13 @@
 <option selected>JPG</option>
 <option value="jpeg">JPEG</option>
 <option value="tif">TIF</option>
-<option value="png">PNG/option>
+<option value="png">PNG</option>
 <option value="gif">GIF</option>
 <option value="raw">RAW</option>
 </select>
-<input type="button" onClick="location=document.hop.choose.options[document.hop.choose.selectedIndex].value;" value="Select!"></p>
 </form>
+
+<br>
 
 <label for="cameratypes" accesskey="c">Camera Types</label>
 <form name="Camera Types">
@@ -55,10 +60,13 @@
 <option selected>Nikon</option>
 <option value="canon">Canon</option>
 <option value="sony">Sony</option>
-<option value="kodak">Kodak/option>
+<option value="kodak">Kodak</option>
 <option value="photobooth">Photo Booth</option>
 <option value="other">Other</option>
 </select>
+
+<br><br>
+
 <input type="button" onClick="location=document.hop.choose.options[document.hop.choose.selectedIndex].value;" value="Select!"></p>
 </form>
 
