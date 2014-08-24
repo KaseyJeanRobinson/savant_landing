@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<label for="location" accesskey="l">City / State / Zip</label>
+<select name="city" id="city">
+<option value="">-- choose one --</option>
+<optgroup label="USA">
+<option value="SF">San Francisco</option>
+<option value="NY">New York</option>
+<option> … remaining US states … </option>
+</optgroup>
+<optgroup label="State">
+<option value="AB">California</option>
+<option value="CA">New York</option>
+<option> … remaining zip code … </option>
+</optgroup>
+</select>
+
+<label for="distance" accesskey="d">Distance From Location</label>
+<form name="distance">
+<p align="center">
+<select name="choose">
+<option selected>5-10 Miles</option>
+<option value="">10-40 Miles</option>
+<option value="">50-100 Miles</option>
+<option value="">100-500 Miles</option>
+<option value="">1000+ Miles</option>
+<option value="">2000+ Miles</option>
+</select>
+<input type="button" onClick="location=document.hop.choose.options[document.hop.choose.selectedIndex].value;" value="Select!"></p>
+</form>
+
+<label for="imagefiletypes" accesskey="i">Image File Types</label>
+<form name="Image File Types">
+<p align="center">
+<select name="choose">
+<option selected>JPG</option>
+<option value="jpeg">JPEG</option>
+<option value="tif">TIF</option>
+<option value="png">PNG/option>
+<option value="gif">GIF</option>
+<option value="raw">RAW</option>
+</select>
+<input type="button" onClick="location=document.hop.choose.options[document.hop.choose.selectedIndex].value;" value="Select!"></p>
+</form>
+
+<label for="cameratypes" accesskey="c">Camera Types</label>
+<form name="Camera Types">
+<p align="center">
+<select name="choose">
+<option selected>Nikon</option>
+<option value="canon">Canon</option>
+<option value="sony">Sony</option>
+<option value="kodak">Kodak/option>
+<option value="photobooth">Photo Booth</option>
+<option value="other">Other</option>
+</select>
+<input type="button" onClick="location=document.hop.choose.options[document.hop.choose.selectedIndex].value;" value="Select!"></p>
+</form>
+
+</body>
+</html>
